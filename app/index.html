@@ -77,212 +77,51 @@
 
           <form>
 
-            <h4>Desktop</h4>
+            <h2>Desktop</h2>
 
-            <div class="form-group">
-              <label for="desktopbrowser">What operating system and browser are you testing?</label>
-              <input type="text" class="form-control" id="desktopbrowser" placeholder="What operating system and browser are you testing?">
+            <p>Supported Desktop Browsers</p>
+
+            <div class="desktop items">
+              <h3 class="passed">Passed</h3>
+              <h3 class="failed">Failed</h3>
+
+              <input id="desktop-visual" type="checkbox" value="Desktop Layout">
+              <label for="desktop-visual">Does the site pass a visual inspection of layout and content?</label>
+
+              <input id="desktop-form" type="checkbox" value="Desktop Form">
+              <label for="desktop-form">Does the lead form submit properly?</label>
+
+              <input id="desktop-calltracking" type="checkbox" value="Desktop CallTracking">
+              <label for="desktop-calltracking">Does call tracking work as expected?</label>
+
+              <input id="desktop-analytics" type="checkbox" value="Desktop Analytics">
+              <label for="desktop-analytics">Is Google Analytics configured properly?</label>
+
             </div>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Layout"> Are any blocks of content or layout out of place?
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Images"> Are the images showing on the site as expected?
-                </label>
-                <p class="help-block">This includes logos, affiliate images, and banners.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Text"> Is the text content correct?
-                </label>
-                <p class="help-block">This includes static text and data driven text.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Links"> Do all the links work as expected?
-                </label>
-                <p class="help-block">Check text links and image links.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Form"> Do the forms on the site work properly?
-                </label>
-                <p class="help-block">Does the form submit and are the values in the submission correct and mapped to the correct columns?</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop CallTracking"> Does call tracking work as expected?
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Analytics"> Is Google Analytics configured properly?
-                </label>
-                <p class="help-block">Do page views and events track properly?</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Title"> Is the page title correct?
-                </label>
-                <p class="help-block">This is the text that appears at the top of the browser window.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Description"> Is the meta description correct?
-                </label>
-                <p class="help-block">This is visible in the page source near the top.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Canonical"> Is the canonical url correct?
-                </label>
-                <p class="help-block">This is visible in the page source near the top.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Canonical"> Are there any javascript errors?
-                </label>
-              </div>
-            </div>
 
             <hr>
 
-            <h4>Mobile</h4>
+            <h2>Mobile</h2>
 
-            <div class="form-group">
-              <label for="desktopbrowser">What operating system and browser are you testing?</label>
-              <input type="text" class="form-control" id="desktopbrowser" placeholder="What operating system and browser are you testing?">
-            </div>
+            <p>Supported Mobile Browsers</p>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Layout"> Are any blocks of content or layout out of place?
-                </label>
-              </div>
-            </div>
+            <div class="mobile items">
+              <h3 class="passed">Passed</h3>
+              <h3 class="failed">Failed</h3>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Images"> Are the images showing on the site as expected?
-                </label>
-                <p class="help-block">This includes logos, affiliate images, and banners.</p>
-              </div>
-            </div>
+              <input id="mobile-visual" type="checkbox" value="Mobile Layout">
+              <label for="mobile-visual">Does the site pass a visual inspection of layout and content?</label>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Text"> Is the text content correct?
-                </label>
-                <p class="help-block">This includes static text and data driven text.</p>
-              </div>
-            </div>
+              <input id="mobile-form" type="checkbox" value="Mobile Form">
+              <label for="mobile-form">Does the lead form submit properly?</label>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Links"> Do all the links work as expected?
-                </label>
-                <p class="help-block">Check text links and image links.</p>
-              </div>
-            </div>
+              <input id="mobile-calltracking" type="checkbox" value="Mobile CallTracking">
+              <label for="mobile-calltracking">Does call tracking work as expected?</label>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Form"> Do the forms on the site work properly?
-                </label>
-                <p class="help-block">Does the form submit and are the values in the submission correct and mapped to the correct columns?</p>
-              </div>
-            </div>
+              <input id="mobile-analytics" type="checkbox" value="Mobile Analytics">
+              <label for="mobile-analytics">Is Google Analytics configured properly?</label>
 
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop CallTracking"> Does call tracking work as expected?
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Analytics"> Is Google Analytics configured properly?
-                </label>
-                <p class="help-block">Do page views and events track properly?</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Title"> Is the page title correct?
-                </label>
-                <p class="help-block">This is the text that appears at the top of the browser window.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Description"> Is the meta description correct?
-                </label>
-                <p class="help-block">This is visible in the page source near the top.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Canonical"> Is the canonical url correct?
-                </label>
-                <p class="help-block">This is visible in the page source near the top.</p>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" value="Desktop Canonical"> Are there any javascript errors?
-                </label>
-              </div>
             </div>
 
           </form>
