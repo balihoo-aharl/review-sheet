@@ -61,6 +61,7 @@ body {
 .passed, .failed {
   border-left: 5px solid #ccc;
   padding-left: 5px;
+  margin-top: 30px;
 }
 
 .passed {
@@ -80,6 +81,12 @@ input[type=checkbox] {
 input[type=checkbox] + label {
   order: 4;
   font-weight: normal;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 4px;
 
   &::before {
     content: '\e014';
@@ -99,6 +106,8 @@ input[type=checkbox] + label {
 
 input[type=checkbox]:checked + label {
   order: 2;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
 
   &::before {
     content: '\e013 ';
