@@ -5,12 +5,14 @@ $(function() {
 
   $('.review-type button').click(function(event) {
     event.preventDefault();
-    $(this).addClass('active');
-    $(this).siblings('button').removeClass('active');
+    var button = $(this);
 
-    if ($(this).hasClass('show-basic')) {
+    button.addClass('active');
+    button.siblings('button').removeClass('active');
+
+    if (button.hasClass('show-basic')) {
       $('label.adv').fadeOut('500');
-    } else if ($(this).hasClass('show-adv')) {
+    } else if (button.hasClass('show-adv')) {
       $('label.adv').fadeIn('500');
     }
   });
