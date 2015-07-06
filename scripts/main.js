@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+"use strict";$(function(){$(".review-type button").click(function(a){a.preventDefault();var s=$(this);s.addClass("active"),s.siblings("button").removeClass("active"),s.hasClass("show-basic")?$("label.adv").fadeOut("500"):s.hasClass("show-adv")&&$("label.adv").fadeIn("500")})});
