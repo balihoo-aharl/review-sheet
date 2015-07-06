@@ -32,6 +32,10 @@
       <div class="jumbotron">
         <h1>Local Site Review!</h1>
         <p class="lead">Lets get started?</p>
+        <div class="btn-group btn-group-lg review-type" role="group">
+          <button type="button" class="show-basic btn btn-default active">Basic</button>
+          <button type="button" class="show-adv btn btn-default">Advanced</button>
+        </div>
       </div>
 
       <div class="row main-content">
@@ -77,51 +81,106 @@
 
           <form>
 
-            <h2>Desktop</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2>Desktop</h2>
+              </div>
+              <div class="panel-body">
+              <p>Balihoo professional services support the current version of major desktop browsers +1 (+1 being the previous version). You can view current browsers at <a href="http://browsehappy.com/" target="_blank">Browse Happy</a>.</p>
 
-            <p>Supported Desktop Browsers</p>
+                <div class="desktop items">
+                  <h3 class="passed text-muted">Passed</h3>
+                  <h3 class="failed text-muted">Failed</h3>
 
-            <div class="desktop items">
-              <h3 class="passed">Passed</h3>
-              <h3 class="failed">Failed</h3>
+                  <input id="desktop-visual" type="checkbox" value="Desktop Layout">
+                  <label for="desktop-visual">Does the site pass a visual inspection of layout and content?</label>
 
-              <input id="desktop-visual" type="checkbox" value="Desktop Layout">
-              <label for="desktop-visual">Does the site pass a visual inspection of layout and content?</label>
+                  <input id="desktop-content" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-content">Does the site content match what the brand provided?</label>
 
-              <input id="desktop-form" type="checkbox" value="Desktop Form">
-              <label for="desktop-form">Does the lead form submit properly?</label>
+                  <input id="desktop-specialcharacters" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-specialcharacters">Are any strange characters visible in the content.</label>
 
-              <input id="desktop-calltracking" type="checkbox" value="Desktop CallTracking">
-              <label for="desktop-calltracking">Does call tracking work as expected?</label>
+                  <input id="desktop-images" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-images">Are there any broken images?</label>
 
-              <input id="desktop-analytics" type="checkbox" value="Desktop Analytics">
-              <label for="desktop-analytics">Is Google Analytics configured properly?</label>
+                  <input id="desktop-links" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-links">Are there any broken links?</label>
 
+                  <input id="desktop-title" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-title">SEO: Is the page title correct?</label>
+
+                  <input id="desktop-metadescription" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-metadescription">SEO: Is the meta description correct</label>
+
+                  <input id="desktop-canonical" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-canonical">SEO: Dis the canonical correct?</label>
+
+                  <input id="desktop-form" type="checkbox" value="Desktop Form">
+                  <label for="desktop-form">Does the lead form submit properly?</label>
+
+                  <input id="desktop-calltracking" type="checkbox" value="Desktop CallTracking">
+                  <label for="desktop-calltracking">Does call tracking work as expected?</label>
+
+                  <input id="desktop-analytics" type="checkbox" value="Desktop Analytics">
+                  <label for="desktop-analytics">Is Google Analytics configured properly?</label>
+
+                  <input id="desktop-analyticsevents" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="desktop-analyticsevents">Are the analytics events tracking as expected?</label>
+
+                </div>
+              </div>
             </div>
 
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2>Mobile</h2>
+              </div>
+              <div class="panel-body">
+                <p>Balihoo professional services supports and tests Safari in the latest version of iOS plus the last major iOS release.</p>
 
-            <hr>
+                <div class="mobile items">
+                  <h3 class="passed text-muted">Passed</h3>
+                  <h3 class="failed text-muted">Failed</h3>
 
-            <h2>Mobile</h2>
+                  <input id="mobile-visual" type="checkbox" value="Mobile Layout">
+                  <label for="mobile-visual">Does the site pass a visual inspection of layout and content?</label>
 
-            <p>Supported Mobile Browsers</p>
+                  <input id="mobile-content" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-content">Does the site content match what the brand provided?</label>
 
-            <div class="mobile items">
-              <h3 class="passed">Passed</h3>
-              <h3 class="failed">Failed</h3>
+                  <input id="mobile-specialcharacters" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-specialcharacters">Are any strange characters visible in the content.</label>
 
-              <input id="mobile-visual" type="checkbox" value="Mobile Layout">
-              <label for="mobile-visual">Does the site pass a visual inspection of layout and content?</label>
+                  <input id="mobile-images" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-images">Are there any broken images?</label>
 
-              <input id="mobile-form" type="checkbox" value="Mobile Form">
-              <label for="mobile-form">Does the lead form submit properly?</label>
+                  <input id="mobile-links" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-links">Are there any broken links?</label>
 
-              <input id="mobile-calltracking" type="checkbox" value="Mobile CallTracking">
-              <label for="mobile-calltracking">Does call tracking work as expected?</label>
+                  <input id="mobile-title" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-title">SEO: Is the page title correct?</label>
 
-              <input id="mobile-analytics" type="checkbox" value="Mobile Analytics">
-              <label for="mobile-analytics">Is Google Analytics configured properly?</label>
+                  <input id="mobile-metadescription" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-metadescription">SEO: Is the meta description correct</label>
 
+                  <input id="mobile-canonical" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-canonical">SEO: Dis the canonical correct?</label>
+
+                  <input id="mobile-form" type="checkbox" value="Mobile Form">
+                  <label for="mobile-form">Does the lead form submit properly?</label>
+
+                  <input id="mobile-calltracking" type="checkbox" value="Mobile CallTracking">
+                  <label for="mobile-calltracking">Does call tracking work as expected?</label>
+
+                  <input id="mobile-analytics" type="checkbox" value="Mobile Analytics">
+                  <label for="mobile-analytics">Is Google Analytics configured properly?</label>
+
+                  <input id="mobile-analyticsevents" type="checkbox" value="Desktop Layout">
+                  <label class="adv" for="mobile-analyticsevents">Are the analytics events tracking as expected?</label>
+
+                </div>
+              </div>
             </div>
 
           </form>
